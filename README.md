@@ -4,7 +4,7 @@
 08/06/2021
 
 ### Project Title
-bikeshare
+Python Terminal Bikeshare Project
 
 ### Description
 provides multiple bikeshare metrics for chicago, new york city or washington
