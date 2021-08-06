@@ -22,7 +22,7 @@ def get_filters():
         if city in CITY_DATA:
             break
         else:
-            print('\033[1;31mYour entry of \'' + city + '\' is not a valid city. \nPlease choose between:\n-chicago\n-new york city\n-washington\n \033[0;37m')
+            print('Your entry of \'{}\' is not a valid city. \nPlease choose between:\n-chicago\n-new york city\n-washington\n'.format(city))
       
             
     # TO DO: get user input for month (all, january, february, ... , june)
@@ -32,7 +32,7 @@ def get_filters():
         if (month in month_list):
             break
         else:
-            print('\033[1;31mYour entry of \'' + month + '\' is not a valid month.\nPlease enter a valid month:\n-january\n-february\n-march\n-april\n-may\n-june \033[0;37m')
+            print('Your entry of \'{}\' is not a valid month.\nPlease enter a valid month:\n-january\n-february\n-march\n-april\n-may\n-june'.format(month))
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     day_list = ['monday','tuesday','wednesday','thursday','friday','saturday','sunday','all']
@@ -41,7 +41,7 @@ def get_filters():
         if (day in day_list):
             break
         else:
-            print('\033[1;31mYour entry of \'' + day + '\' is not a valid day.\nPlease enter a valid day:\n-sunday\n-monday\n-tuesday\n-wednesday\n-thursday\n-friday\n-saturday \033[0;37m')
+            print('Your entry of \'{}\' is not a valid day.\nPlease enter a valid day:\n-sunday\n-monday\n-tuesday\n-wednesday\n-thursday\n-friday\n-saturday'.format(day))
     
     print('-'*40)
     return city, month, day
@@ -127,9 +127,9 @@ def station_stats(df):
     print('The most common \'End Station\': ' + most_common_end)
     
     # TO DO: display most frequent combination of start station and end station trip
-    df['start_end'] = df['Start Station'] + " \033[1mTO\033[0m " + df['End Station']
+    df['start_end'] = df['Start Station'] + " TO " + df['End Station']
     most_common_s_e = df['start_end'].mode()[0]
-    print('The most common \'Start\' \033[1mTO\033[0m \'End\' route is: ' + most_common_s_e)
+    print('The most common \'Start\' TO \'End\' route is: {}'.format(most_common_s_e))
     
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
