@@ -10,10 +10,10 @@ Python Terminal Bikeshare Project
 Exlore bikeshare data from users across 3 cities: Chicago, New York City and Washington
 
 ### Files used
-bikeshare.py
-chicago.csv - not on repo
-washington.csv - not on repo
-new_york_city.csv - not on repo
+* bikeshare.py
+* chicago.csv - **not on repo**
+* washington.csv - **not on repo**
+* new_york_city.csv - **not on repo**
 
 ### Credits
 Udacity Nanodegree program and their various lessons from "Programming for Data Science with Python"
