@@ -7,7 +7,7 @@
 Python Terminal Bikeshare Project
 
 ### Description
-provides multiple bikeshare metrics for chicago, new york city or washington
+Exlore bikeshare data from users across 3 cities: Chicago, New York City and Washington
 
 ### Files used
 bikeshare.py
